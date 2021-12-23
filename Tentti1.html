@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Christmas </title>
+
+    <script src="https://kit.fontawesome.com/c9ceb8efba.js" crossorigin="anonymous"></script>
+   
+
+
+    <style>
+        /* 1. For desktop */
+        @media only screen and (min-width: 1440px) and (min-height: 1024px) {
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+            /* 1.1 The entire body */
+            body {
+                box-sizing: border-box;
+                margin-top: 0;
+                margin-left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            /* 1.2 Menu bar */
+            .phandau {
+                background-color: #F5EFE9;
+                width: 100%;
+                height: 170px;
+                display: flex;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                font-family: 'Poppins', sans-serif;
+                color: #131400;
+                border-bottom: 2px #EB3B4D solid;
+                font-weight: bold;
+                z-index: 2;
+            }
+
+            .giong {
+                font-size: 25px;
+            }
+
+            .noen {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                text-align: center;
+                width: 300px;
+            }
+
+            .gia {
+                height: 8vh;
+
+            }
+           
+            .trangtri {
+                background-color:#EB3B4D;
+                border-radius: 50%;
+                width: 170px;
+                height: 14vh;
+                border: 1.5px silver solid;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .benphai {
+                height: 100%;
+                width: 640px;
+                font-size: 40px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+          
+                
+            }
+
+            .title {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                font-size: 40px;
+                
+            }
+
+            .chung:hover {
+                color: #FFD105;
+                cursor: pointer;
+            }
+            
+            /* 1.3 The first content subpart (Chirstmas and New Year greetings) */
+            .phansau {
+                background-color: #F5EFE9;
+                margin-top: 82px;
+                position: static;
+                width: 160%;
+                margin-top: 150px;
+                display: grid;
+                right: 0;
+                grid-template-columns: 1.1fr 1fr;
+                font-family: 'Poppins', sans-serif;
+                height: 820px;
+              
+            }
+
+            .anh {
+                width: 70vh;
+                height: 60vh;
+            }
+
+            
+            .paakuva {
+                text-align: right;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: right;
+            }
+
+            .bo {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                justify-content: center;
+            }
+
+            .thanbai {
+                color: #404040;
+                font-size: 30px;
+            }
+
+            .getstarted {
+                background-color: #EB3B4D;
+                width: 24vh;
+                height: 12vh;
+                display:flex;
+                flex-direction: row;
+                color: #f5f6fa;
+                align-items: center;
+                justify-content: center;
+                border-radius: 30px;
+                cursor: pointer;
+                font-size: 27px;
+                box-shadow: -1px -1px 15px silver;
+            }
+
+            .getstarted:hover {
+                color: #FFD105;
+                background-color: silver;
+            }
+            
+            .chudau {
+                font-size: 50px;
+            }
+
+            .blanket {
+                width: 100vh;
+            }
+
+
+            
+        /*  1.4 The second content subpart (Introduction) */
+
+        .phanba {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: static;
+            height: 800px;
+            margin-top: 0px;
+            width: 160%;
+            background-color: #F5EFE9;
+            font-family: 'Poppins', sans-serif;
+           
+        }
+
+        .lahja {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 120vh;
+        }
+
+       
+
+        .part {
+            text-align: center;
+        }
+
+        .part1 {
+            font-size: 30px;
+        }
+
+        .dia {
+                color: #131400;
+                font-size: 30px;
+        }
+
+        .symbol {
+            height: 27vh;
+            width: 270px;
+        }
+
+        
+        /* 1.5 The third content subpart (Gift List) */
+        
+        .phanbon {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 1450px;
+            background-color: #F5EFE9;
+            position: static;
+            width: 160%;
+        }
+
+        .esineet {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 250px;
+        }
+
+        .sanpham {
+            background-color: #FAD45A;
+            height: 41vh;
+            width: 330px;
+            border: 1px white solid;
+            border-radius: 10px;
+            box-shadow: 1px 1px 15px #EB3B4D, -1px -1px 15px #EB3B4D;
+        }
+    
+        .tyypi {
+            color: #131400;
+        }
+
+        .ikoni {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            color: #EB3B4D;
+            
+        }
+        
+        .elokuva {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 22vh;
+        }
+
+        .hinta {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .tyypi {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        
+
+        /* 1.6 The fourth content part (New Gift List) */
+
+        .phannam {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: #F5EFE9;
+            position: static;
+            width: 160%;
+            height: 1350px;
+        
+        }
+
+        .quamoi {
+            
+            width: 1500px;
+            height: 120vh;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 150px;
+            text-align: center;
+        }
+
+        .lahjoja {
+            border: 1.2px #F0FFF9 solid;
+            height: 47vh;
+            width: 400px;
+            box-shadow: 3px 3px 10px silver, -3px -3px 10px silver;
+            background-color: #FAD45A;
+            border-radius: 10px;
+        }
+
+        .khungchua {
+            height: 31vh;
+            width: 100%;
+            background-color: #EB3B4D;
+            border-left: none;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .price {
+            color: #131400;
+            font-size: 27px;
+        }
+
+        .description {
+            color: #131400;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .le {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .key {
+            color:#F0BC32;
+            background-color: #EB3B4D;
+            width: 50px;
+            height: 2.7vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        /* 1.7 The fifth content part with table (Store Locations) */ 
+
+        .phanbay {
+            background-color: #F5EFE9;
+            font-family: 'Poppins', sans-serif;
+            position: static;
+            width: 160%;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            height: 125vh;
+        }
+
+        .phanbay, h2 {
+            text-align: center;
+        }
+
+        .content-table {
+            border-collapse: collapse;
+            height: 80vh;
+            width: 1730px;
+        }
+
+    
+       
+
+        .phan1 {
+            background-color:#EB3B4D;
+            height: 100px;
+            
+        }
+
+        #first {
+            border-top-left-radius: 40px;
+        }
+
+        #last {
+            border-top-right-radius: 40px;
+        }
+
+       
+
+        .store {
+            background-color: #FAD45A;
+        }
+
+        .cuoi {
+            border-right: 1px white solid;
+            border-bottom: 1px white solid;
+            
+        }
+
+        .duoi {
+            border-top: 1px white solid;
+            border-right: 1px white solid;
+            border-bottom: 1px white solid;
+        }
+
+        .rieng {
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            font-size: 30px;
+            border-bottom: white;
+            box-shadow: -0.5px -0.5px 10px silver;
+        }
+    
+        .phan2 {
+            box-shadow: 0.5px 0.5px 10px silver;
+            font-size: 27px;
+        }
+       
+
+        .terve {
+            font-size: 30px;
+        }
+        
+        /* 1.8 The sixth content subpart (Message Form) */
+        .phantam {
+            font-family: 'Poppins', sans-serif;
+            width: 160%;
+            height: 166vh;  
+            color: #07101C;      
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #F5EFE9;
+            font-weight: bold;
+            position: static;
+        }
+
+        .phanchia {
+            display: grid;
+            grid-template-columns: 0.4fr 2fr 1.9fr 0.2fr;
+            border: 1px white solid;
+            height: 123vh;
+            width: 1730px;
+            background-color: #FA4E5A;
+            border-radius: 30px;
+            box-shadow: -0.5px -0.5px 10px silver;
+        }
+
+        .lathu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(15deg);
+            position: static;
+            z-index: 1;
+        }
+
+        .loichuc {
+            width: 72vh;
+        }
+
+        .common {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .khungdien {
+            background-color: white;
+            width: 66%;
+            line-height: 30px;
+            border-radius: 20px;
+            border: 0.5px silver solid;
+            font-family: 'Poppins', sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+        }
+        
+        #viesti {
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            border-radius: 16px;
+            border: 0.5px silver solid;
+        }
+
+        #biet {
+            height: 9vh;
+            width: 280px;
+            border-radius: 15px;
+            border: 1px silver solid;
+            background-color: #FAD45A;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 25px;
+            box-shadow:  -0.5px -0.5px 10px silver;
+        }
+
+        #biet:hover {
+            background-color: #EB3B4D;
+        }
+
+        #vuong {
+            border-radius: 16px;
+            font-size: 23.5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #envelope {
+            height: 38vh;
+            width: 600px;
+        }
+
+        .bao {
+            font-size: 26px;
+            width: 20px;
+            line-height: 20px;
+        }
+
+        #arvo {
+            height: 20px;
+            width: 30px;
+        }
+
+        #dong {
+            height: 20px;
+            width: 30px;
+        }
+
+        .zo {
+            height: 20px;
+            width: 30px;
+        }
+        /* 1.9 Footer part */
+
+        .lastchapter {
+            display: flex;
+           flex-direction:row;
+           align-items: center;
+           justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            width: 160%;
+            background-color: #F5EFE9; 
+            border-top: 2px #EB3B4D solid;
+        }
+
+
+        .noidung {
+            display: flex;
+            width: 1800px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .dongdau {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .piece {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: left;
+            width: 232px;
+   
+        }
+
+        .yhteinen {
+            font-size: 23px;
+            width: 200px;
+        }
+
+        .khongco {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 7vh;
+            font-size: 22px;
+        }
+
+        #mang2 {
+            height: 34vh;
+        }
+
+        #mang3 {
+            height: 34vh;
+        }
+
+        #mang4 {
+            height: 34vh;
+        }
+
+        .khacbiet {
+           display: flex;
+           flex-direction: column;
+           align-items: left;
+           justify-content: center;
+        }
+
+        .chieu {
+            width: 160px;
+        }
+
+        .thesame {
+            font-size: 23px;
+        }
+        
+        .chot {
+            background-color: #F5EFE9;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            width: 160%;
+            border-top: 0.2px #F5EFE9 solid;
+        }
+
+        .giangsinh {
+            height: 60px;
+            width: 60px;
+        }
+
+        .appstore {
+            height: 100px;
+            width: 280px;
+        }
+    }
+
+
+    /* 2. For Ipad Pro Resolution */
+    @media only screen and (min-width: 1024px) and (min-height: 1366px) {
+          /* 2.1 The entire body */
+        body {
+                box-sizing: border-box;
+                margin-top: 0;
+                margin-left: 0;
+                right: 0;
+                position: relative;
+                width: 100%;
+        }
+
+         /* 2.2 Menu bar */
+        .phandau {
+                background-color: #F5EFE9;
+                width: 100%;
+                height: 250px;
+                display: flex;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                font-family: 'Poppins', sans-serif;
+                color: #131400;
+                border-bottom: 2px #EB3B4D solid;
+                font-weight: bold;
+                z-index: 2;
+            }
+
+            .giong {
+                font-size: 35px;
+            }
+
+            .noen {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                text-align: center;
+            }
+
+            .gia {
+                height: 8vh;
+            }
+
+            .trangtri {
+                background-color:#EB3B4D;
+                border-radius: 50%;
+                width: 220px;
+                height: 12vh;
+                border: 1.5px silver solid;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .benphai {
+                height: 100%;
+                width: 600px;
+                font-size: 36px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                
+            }
+
+            .title {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                font-size: 35px;  
+            }
+
+            .chung:hover {
+                color: #FFD105;
+                cursor: pointer;
+            }
+
+       /* 2.3 The first content subpart (Chirstmas and New Year greetings) */
+       .phansau {
+                background-color: #F5EFE9;
+                margin-top: 82px;
+                position: static;
+                width: 172%;
+                margin-top: 150px;
+                display: grid;
+                right: 0;
+                grid-template-columns: 1.2fr 1fr;
+                font-family: 'Poppins', sans-serif;
+                height: 1100px;
+            }
+
+            .anh {
+                width: 800px;
+                height: 54vh;
+            }
+
+            
+            .paakuva {
+                text-align: right;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: right;
+            }
+
+            .bo {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                justify-content: center;
+            }
+
+            .thanbai {
+                color: #404040;
+                font-size: 36px;
+            }
+
+            .getstarted {
+                background-color: #EB3B4D;
+                width: 300px;
+                height: 10vh;
+                display:flex;
+                flex-direction: row;
+                color: #f5f6fa;
+                align-items: center;
+                justify-content: center;
+                border-radius: 30px;
+                cursor: pointer;
+                font-size: 35px;
+                box-shadow: -1px -1px 15px silver;
+                outline: none;
+            }
+            
+            .getstarted:hover {
+                color: #FFD105;
+                background-color: #5BF578;
+            }
+            .chudau {
+                font-size: 62px;
+            }
+
+           
+
+    /* 2.4 The second content subpart (Introduction) */
+    .phanba {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: static;
+            height: 1050px;
+            margin-top: 0px;
+            width: 172%;
+            background-color: #F5EFE9;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .lahja {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 1400px;
+        }
+
+
+        .part {
+            text-align: center;
+        }
+
+        .part1 {
+            font-size: 40px;
+        }
+
+        .dia {
+                color: #131400;
+                font-size: 34px;
+        }
+
+        /* 2.5 The third content subpart (Gift List) */
+        
+        .phanbon {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #F5EFE9;
+            position: static;
+            width: 172%;
+        }
+
+        .esineet {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 150px;
+        }
+
+        .sanpham {
+            background-color: #FAD45A;
+            height: 33vh;
+            width: 320px;
+            border: 1px white solid;
+            border-radius: 10px;
+            box-shadow: 1px 1px 15px #EB3B4D, -1px -1px 15px #EB3B4D;
+        }
+    
+        .tyypi {
+            color: #131400;
+        }
+
+        .ikoni {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            color: #EB3B4D;
+        }
+        
+        .elokuva {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 19vh;
+        }
+
+        .hinta {
+            font-weight: bold;
+            font-size: 25px;
+        }   
+
+        .tyypi {
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .symbol {
+            height: 18vh;
+            width: 260px;
+        }
+
+        /* 2.6 The fourth content part (New Gift List) */
+
+        .phannam {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: #F5EFE9;
+            position: static;
+            width: 172%;
+            height: 125vh;
+        }
+
+        .quamoi {
+            
+            width: 1284px;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 40px;
+            text-align: center;
+        }
+
+        .lahjoja {
+            border: 1.2px #F0FFF9 solid;
+            height: 38.3vh;
+            width: 383px;
+            box-shadow: 3px 3px 10px silver, -3px -3px 10px silver;
+            background-color: #FAD45A;
+            border-radius: 10px;
+        }
+
+        .khungchua {
+            height: 26vh;
+            width: 100%;;
+            background-color: #EB3B4D;
+            border-left: none;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .description {
+            color: #131400;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .le {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .key {
+            color:#F0BC32;
+            background-color: #EB3B4D;
+            width: 4vh;
+            height: 2.5vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .price {
+            font-size: 27px;
+        }
+        
+         /* 2.7 The fifth content part with table (Store Locations) */ 
+
+         .phanbay {
+            background-color: #F5EFE9;
+            font-family: 'Poppins', sans-serif;
+            position: static;
+            width: 172%;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            height: 85vh;
+        }
+
+        .phanbay, h2 {
+            text-align: center;
+        }
+
+        .content-table {
+            border-collapse: collapse;
+            height: 60vh;
+            width: 1500px;
+        }
+
+    
+        .terve {
+            color: #131400;
+            font-size: 20px;
+        }
+
+        .phan1 {
+            background-color:#EB3B4D;
+            height: 100px;
+            
+        }
+
+        #first {
+            border-top-left-radius: 40px;
+        }
+
+        #last {
+            border-top-right-radius: 40px;
+        }
+
+       
+
+        .store {
+            background-color: #FAD45A;
+        }
+
+        .cuoi {
+            border-right: 1px white solid;
+            border-bottom: 1px white solid;
+            
+        }
+
+        .duoi {
+            border-top: 1px white solid;
+            border-right: 1px white solid;
+            border-bottom: 1px white solid;
+        }
+
+        .rieng {
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            font-size: 32px;
+            border-bottom: white;
+            box-shadow: -0.5px -0.5px 10px silver;
+        }
+    
+        .phan2 {
+            box-shadow: 0.5px 0.5px 10px silver;
+            font-size: 30px;
+        }
+       
+
+        .terve {
+            font-size: 33px;
+        }
+
+         /* 2.8 The sixth content subpart (Message Form) */
+         .phantam {
+            font-family: 'Poppins', sans-serif;
+            width: 172%;
+            height: 121vh;  
+            color: #07101C;      
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #F5EFE9;
+            font-weight: bold;
+            position: static;
+        }
+
+        .phanchia {
+            display: grid;
+            grid-template-columns: 0.2fr 2.2fr 1.5fr 0fr;
+            border: 1px white solid;
+            height: 95vh;
+            width: 1500px;
+            background-color: #FA4E5A;
+            border-radius: 30px;
+            box-shadow: -0.5px -0.5px 10px silver;
+        }
+
+        .lathu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(15deg);
+            position: static;
+            z-index: 1;
+            height: 90vh;
+            width: 30vh;
+        }
+
+        .loichuc {
+            width: 53vh;
+        }
+
+        .common {
+            font-size: 27.5px;
+            font-weight: bold;
+        }
+
+        .khungdien {
+            background-color: white;
+            width: 68%;
+            line-height: 45px;
+            border-radius: 20px;
+            border: 0.5px silver solid;
+            font-family: 'Poppins', sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+        }
+        
+        #viesti {
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            border-radius: 16px;
+            border: 0.5px silver solid;
+        }
+
+        #biet {
+            height: 6vh;
+            width: 18vh;
+            border-radius: 15px;
+            border: 1px silver solid;
+            background-color: #FAD45A;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 22px;
+            box-shadow: -0.5px -0.5px 10px silver;
+        }
+
+        #biet:hover {
+            background-color: #EB3B4D;
+        }
+
+        #vuong {
+            border-radius: 16px;
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            width: 180px;
+        }
+
+        #envelope {
+            height: 28vh;
+            width: 35vh;
+        }
+
+        .bao {
+            font-size: 26px;
+            width: 20px;
+            line-height: 20px;
+        }
+
+        #arvo {
+            height: 20px;
+            width: 30px;
+        }
+
+        #dong {
+            height: 20px;
+            width: 30px;
+        }
+
+        .zo {
+            height: 20px;
+            width: 30px;
+        }
+
+           /* 2.9 Footer part */
+
+        .lastchapter {
+            display: flex;
+           flex-direction:row;
+           align-items: center;
+           justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            width: 172%;
+            background-color: #F5EFE9; 
+            border-top: 2px #EB3B4D solid;
+        }
+
+
+        .noidung {
+            display: flex;
+            width: 2200px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .dongdau {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .piece {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: left;
+            width: 20em;
+            font-size: 21px;
+        }
+
+        .khongco {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 8vh;
+        }
+
+        #mang1 {
+            height: 32vh;
+        }
+
+        #mang2 {
+            height: 29.3vh;
+        }
+
+        #mang3 {
+            height: 29.3vh;
+        
+        }
+
+        #mang4 {
+            height: 29.3vh;
+        }
+
+        .khacbiet {
+           display: flex;
+           flex-direction: column;
+           align-items: left;
+           justify-content: left;
+        }
+
+        .chieu {
+            width: 13vh;
+        }
+
+        .thesame {
+            font-size: 26px;
+            width: 13vh;
+        }
+        
+        .chot {
+            background-color: #F5EFE9;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            width: 172%;
+            border-top: 0.2px #F5EFE9 solid;
+        }
+
+        .giangsinh {
+            height: 80px;
+            width: 80px;
+        }
+        #qualac {
+            height: 20vh;
+            width: 10vh;
+        }
+
+        #chay {
+            width: 15vh;
+            height: 5vh;
+            padding-left: 60px;
+        }
+
+        #valmis {
+            width: 15vh;
+            padding-left: 13px;
+        }
+
+        .appstore {
+            height: 100px;
+            width: 295px;
+        }
+    }
+
+    </style>
+</head>
+
+    
+<body>
+    <!-- 1. Menu -->
+    <div id='icon' class='phandau'>
+        <div class='bentrai'>
+            <div class='noen'>
+                <div class='trangtri'>
+                 <img src="kuva/logo.png" class='gia'>
+                </div>
+                <p class='title'> Christmas </p>
+            </div>
+
+        </div>
+
+        
+        <div class='benphai'>
+            <p id='home'class='chung'> Home </p>
+            <p id='party'class='chung'> Celebrate </p>
+            <p id='gift' class='chung'> Gifts </p>
+            <p id='new' class='chung'> New </p>
+        </div>
+        </div>
+        
+
+    <!-- 2. The fisrt content subpart (Chirstmas and New Year greetings)-->
+        <div class='phansau'>
+            <div class='paakuva'> 
+                <img src="kuva/koti.png" class='anh'>
+            </div>
+
+            <div class='bo'>
+            <div class='text'>
+            <div class='message'>
+            <h1 class='chudau'> Merry Christmas <br> and Happy New Year! </h1>
+            <p class='thanbai'> Christmas and a new year is about to begin, <br> all good wishes and successes.</p>
+            </div>
+            <br>
+            <br>
+            <div class='getstarted'>
+                <p class='so'> Get Started! </p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    <!-- 3. The second content subpart (Introduction) -->
+        <div class='phanba'>
+            <div class='giong'>
+                <h2 class='giving'> Start Giving This Christmas </h2>
+            </div>
+            <br>
+            <br>
+            <div class='lahja'>
+                <div id='surprise' class='danhsach'> 
+                <div class='quatang' id='yksi'>
+                    <img src="kuva/box1.png" width='200px' class='symbol'>
+                </div>
+
+                <div class='part' id='kaksi'>
+                    <h3 class='part1'> Surprise Gifts</h3>
+                </div>
+
+                <div class='part' id='kolme'>
+                    <p class='dia'> They are the best <br> gifts there is. </p>
+                </div>
+                </div>
+
+                <div id='ornaments' class='danhsach'>
+                    <div class='quatang' id='nelja'>
+                        <img src="kuva/box2.png" width='200px' class='symbol'>
+                    </div>
+    
+                    <div class='part' id='viisi'>
+                        <h3 class='part1'> Ornaments </h3>
+                    </div>
+    
+                    <div class='part' id='kuusi'>
+                        <p class='dia'> Give a moment to <br> decorate. </p>
+                    </div> 
+                </div>
+
+                <div id='love' class='danhsach'>
+                        <div class='quatang' id='seit'>
+                            <img src="kuva/box3.png" width='200px' class='symbol'>
+                        </div>
+        
+                        <div class='part' id='kahde'>
+                            <h3 class='part1'> Lots of love! </h3>
+                        </div>
+        
+                        <div class='part' id='yhdek'>
+                            <p class='dia'> Give away feelings <br> that last forever. </p>
+                </div> 
+                </div>
+
+    </div>
+    </div>
+
+    <!-- 4. The third content subpart (Gift List)-->
+
+    <div class='phanbon'>
+        <div class='giong'>
+            <h2> Share a gift </h2>
+        </div>
+        <br>
+        <br>
+        <div class='lista'> 
+            <div class='esineet'>
+                <div id='qua1' class='sanpham'>
+                    <div class='ikoni'> 
+                        <p class='rong'> </p>
+                    <div class='traitim'>
+                      <i class="far fa-heart"></i>
+                    </div>
+                    </div>
+                    <div class='elokuva'>
+                    <img src="kuva/lahja1.png" width='180px' class='symbol'>
+                    </div>
+                    <br>
+                    <br>
+                    <p class='hinta'> <i class="fas fa-euro-sign"></i> 15 </p>
+                    <p class='tyypi'> Ginger bread </p>
+                </div>
+
+                <div id='qua2' class='sanpham'>
+                    <div class='ikoni'> 
+                        <p class='rong'> </p>
+                    <div class='traitim'>
+                        <i class="far fa-heart"></i> 
+                    </div>
+                    </div>
+                    <div class='elokuva'>
+                        <p class='rong'> </p>
+                        <img src="kuva/lahja2.png" width='180px' class='symbol'>
+                        </div>
+                    <br>
+                    <br>
+                    <p class='hinta'> <i class="fas fa-euro-sign"></i> 22 </p>
+                    <p class='tyypi'> Santa Claus hat </p>
+                </div>
+
+                <div id='qua3' class='sanpham'>
+                    <div class='ikoni'> 
+                        <p class='rong'> </p>
+                    <div class='traitim'>
+                  <i class="far fa-heart"></i>
+                    </div>
+                    </div>
+                    <div class='elokuva'>
+                        <p class='rong'> </p>
+                        <img src="kuva/lahja3.png" width='180px' class='symbol'>
+                        </div>
+                    <br>
+                    <br>
+                    <p class='hinta'> <i class="fas fa-euro-sign"></i> 48 </p>
+                    <p class='tyypi'> Christmas Tree </p>
+                </div>
+
+                <div id='qua4' class='sanpham'>
+                    <div class='ikoni'> 
+                        <p class='rong'> </p>
+                    <div class='traitim'>
+                        <i class="far fa-heart"></i> 
+                    </div>
+                    </div>
+                    <div class='elokuva'>
+                        <p class='rong'> </p>
+                        <img src="kuva/lahja4.png" width='180px' class='symbol'>
+                        </div>
+                    <br>
+                    <br>
+                    <p class='hinta'> <i class="fas fa-euro-sign"></i> 35 </p>
+                    <p class='tyypi'> Snow man </p>
+                </div>
+
+                <div id='qua5' class='sanpham'>
+                    <div class='ikoni'> 
+                        <p class='rong'> </p>
+                    <div class='traitim'>
+                        <i class="far fa-heart"></i> 
+                    </div>
+                    </div>
+                    <div class='elokuva'>
+                        <p class='rong'> </p>
+                        <img src="kuva/lahja5.png" width='180px' class='symbol'>
+                        </div>
+                    <br>
+                    <br>
+                    <p class='hinta'> <i class="fas fa-euro-sign"></i> 12 </p>
+                    <p class='tyypi'> Candy stick </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. The fourth content part (New Gift List) -->
+
+    <div class='phannam'>
+        <div class='giong'> 
+            <h2> New Gifts </h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class='quamoi'>
+            <div class='lahjoja' id='mondo1'>
+                <div class='khungchua'>
+                    <img src="kuva/uusi1.png" width='170px' class='symbol'>
+                </div>
+            
+                <div class='subtitle'>
+                    <h2 class='price'> <i class="fas fa-euro-sign"></i> 95 </h2>
+                    <p class='description'> Reindeer </p>
+                </div>
+            
+                <div class='le'>
+                    <div class='blank'></div>
+                        <div class='tim'>
+                            <div class='key'> 
+                            <i class="far fa-heart"></i> 
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class='lahjoja' id='mondo2'>
+                <div class='khungchua'>
+                    <img src="kuva/uusi2.png" width='170px' class='symbol'>
+                </div>
+            
+                <div class='subtitle'>
+                    <h2 class='price'> <i class="fas fa-euro-sign"></i> 20 </h2>
+                    <p class='description'> Snow Globe </p>
+                </div>
+            
+                <div class='le'>
+                    <div class='blank'></div>
+                        <div class='tim'>
+                            <div class='key'> 
+                            <i class="far fa-heart"></i> 
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class='lahjoja' id='mondo3'>
+                <div class='khungchua'>
+                    <img src="kuva/uusi3.png" width='170px' class='symbol'>
+                </div>
+            
+                <div class='subtitle'>
+                    <h2 class='price'> <i class="fas fa-euro-sign"></i> 75 </h2>
+                    <p class='description'> Sledge </p>
+                </div>
+            
+                <div class='le'>
+                    <div class='blank'></div>
+                        <div class='tim'>
+                            <div class='key'> 
+                            <i class="far fa-heart"></i> 
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class='lahjoja' id='mondo4'>
+                <div class='khungchua'>
+                    <img src="kuva/uusi4.png" width='170px'>
+                </div>
+            
+                <div class='subtitle'>
+                    <h2 class='price'> <i class="fas fa-euro-sign"></i> 15</h2>
+                    <p class='description'> Christmas Wreath </p>
+                </div>
+
+    <div class='le'>
+        <div class='blank'></div>
+            <div class='tim'>
+                <div class='key'> 
+                <i class="far fa-heart"></i> 
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. The fifth content part with table (Store Locations)-->
+    <div class='phanbay'>
+        <div class='giong'>
+            <h2> Store Locations </h2>
+            <p class='terve'> Let's come to know more about us. Many more diverse products can be found <br>
+                at our stores in different places in Finland. Welcome! </p>
+        </div>
+
+        <div class='chiabang'>
+            <table class='content-table'>
+                <thead class='phan1'>
+                <tr class='rieng'>
+                    <th id='first' class='cuoi'> Store Name</th>
+                    <th class='cuoi'> Address </th>
+                    <th class='cuoi'> Phone Number </th>
+                    <th id='last'> Link to store </th>
+                </tr>
+                </thead>
+                <br>
+                <br>
+                <tbody class='phan2'>
+                <div class='kauppa'>
+                <tr class='store' id='cuahang1'>
+                    <td class='cuoi'> Sága Gifts-myymälä </td>
+                    <td class='cuoi'> Santa Claus Village, <br> Rovaniemi, Suomi </td>
+                    <td class='cuoi'> 040 5948451 </td>
+                    <td class='duoi'> <a href="https://santaclausvillage.info/fi/shops/matkamuistot-lahjatavarat-rovaniemi/saga-gifts-myymala/" target='blank'> Sága Gifts </a></td>
+                </tr>
+                </div>
+
+                <div class='kauppa'>
+                <tr class='store' id='cuahang2'>
+                    <td class='cuoi'> Emma's & Mama's </td>
+                    <td class='cuoi'> Teollisuustie 10, <br> 60100 Seinäjoki, Finland </td>
+                    <td class='cuoi'> 045 2119175 </td>
+                    <td class='duoi'> <a href="https://www.emmasandmamas.fi/" target='blank'> Emma's & Mama's </a></td>
+                </tr>
+                </div>
+
+                <div class='kauppa'>
+                    <tr class='store' id='cuahang3'>
+                        <td class='cuoi'> Weiste </td>
+                        <td class='cuoi'> Kalle Weisteen katu 4, <br> FI-00720 Helsinki, Finland </td>
+                        <td class='cuoi'> 050 351 811</td>
+                        <td class='duoi'> <a href="https://weiste.com/yhteystiedot/" target='blank'>  Weiste </a> </td>
+                    </tr>
+                </div>
+
+                <div class='kauppa'> 
+                    <tr class='store' id='cuahang4'>
+                        <td class='cuoi'> Kankarin Tupa </td>
+                        <td class='cuoi'> Pohjoisesplanadi 35, <br> 00100 Helsinki, Finland </td>
+                        <td class='cuoi'> 09 626182</td>
+                        <td class='duoi'> <a href="https://www.kankurintupa.fi/locations"> Kankarin Tupa </a></td>
+                    </tr>
+                </div>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- 7.The sixth content subpart (Message Form)-->
+        <div class='phantam'>
+        <div class='phanchia'>
+        <div class='khongco'> </div>
+        <div class='loichuc'>
+            <div class='tuade'>
+                <h1> Send Good Wishes To Santa With Us </h1>
+            </div>
+            <br>
+            <hr>
+            <div class='suon'>
+            <form id='lomake'>
+        <div class='dienten'>
+            <label for="nimike" class='common'> Your Name: </label> <br>
+            <input type="text" name='nimike' id='nimike' class='khungdien' placeholder="Write Your Name">
+        </div>
+        <br>
+        <br>
+        <div class='diachi'>
+            <label for="osoite" class='common'> Your Address: </label> <br>
+            <input type="text" name="osoite" id="osoite" class='khungdien' placeholder="Write Your Address">
+        </div>
+        <br>
+        <br>
+        <div class='hotmail'>
+            <label for="sahkoposti" class='common'> Your Email: </label> <br>
+            <input type="email" name='sahkoposti' id='sahkoposti' class='khungdien' placeholder='Write Your Email'>
+        </div>
+        <br>
+        <br>
+
+        <div class='message'>
+            <label for="viesti" class='common'> Your Message to Santa: </label> <br>
+            <textarea name="viesti" id="viesti" cols="53" rows="23">  Write Your Message Here </textarea>
+        </div>
+        <br>
+        <div class='mielta'>
+            <label for="thinking" class='common'> Do you want to receive Santa's wishes back to you? </label>
+            <input type="radio" id='arvo' name='arvo' value='yes' checked> <span class='bao'> Yes </span>
+            <input type="radio" id='dong' name='arvo' value='no'> <span class='bao'> No </span>
+        </div>
+        <br>
+        <div class='mood'> 
+            <label for="vuong" class='common'> How do you feel if you receive a small gift from Santa?  </label>
+            <input type="radio" name='one' id='one' class='zo' checked> <span class='bao'> Happy </span>
+            <input type="radio" name='one' id='one' class='zo'>  <span class='bao'> Neutral </span>
+            <input type="radio" name='one' id='one' class='zo'> <span class='bao'> Upset </span>
+        </div>
+    
+        <br>
+        <br>
+
+        <div class='lahetys'>
+            <input type="submit" value='Send Message' id='biet'>
+        </div>
+            </form>
+            </div>
+            </div>
+
+        <div class='lathu'>
+            <img src="kuva/viesti.png" width='550px' id='envelope'>
+        </div>
+        </div>
+        <div class='khongco'></div>
+    </div>
+    
+    <!-- Footer -->
+<div class='lastchapter'>
+  
+    <div class='noidung'>
+        <div class='piece' id='mang1'>
+        <div class='dongdau'>
+            <img src="kuva/logo.png" width='40px' class='giangsinh'>
+        <div class='khongco'>
+            <h3> Christmas </h3>
+        </div>
+        </div>
+
+        <p class='thesame' id='chay'> This Christmas gives <br> a lot of love </p>
+        <br>
+        <br>
+        <br>
+        <img src="kuva/footer1.png" width='120px' id='qualac'>
+            </div>
+        
+        <div class='piece' id='mang2'>
+        <div class='chieu'>
+        <h3 class='yhteinen'> Our Services </h3>
+        </div>
+        <br>
+        <div class='khacbiet'>
+        <p class='thesame'> Pricing </p>
+        <br>
+        <p class='thesame'> Discounts </p>
+        <br>
+        <p class='thesame'> Shipping Mode </p>
+        </div>
+        </div>
+
+        <div class='piece' id='mang3'>
+        <div class='chieu'>
+        <h3 class='yhteinen'> Support </h3>
+        </div>
+            <br>
+        <div class='khacbiet'>
+            <p class='thesame'> FAQs </p>
+            <br>
+            <p class='thesame'> Support Center </p>
+            <br>
+            <p class='thesame'> Contact Us </p>
+        </div>
+        </div>
+        
+        <div class='piece' id='mang4'>
+            <div class='chieu'>
+            <h3 class='yhteinen' id='valmis'> Available On </h3>
+            </div>
+            <br>
+        <div class='khacbiet'>
+            <br>
+            <img src="kuva/aviable1 (1).png" class='appstore' width='138px'>
+            <br>
+            <img src="kuva/aviable2.png" class='appstore' width='138px'>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class='chot'>
+    <p> &copy; DIN21SP. All rights reserved </p>
+</div>
+</body>
+</html>
