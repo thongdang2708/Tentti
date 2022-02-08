@@ -330,13 +330,11 @@ class Character {
         for (let ft=0; ft<this.player_shotchance.length;ft++) {
                 if (ft === randomIndex & this.player_shotchance[ft] === 0) {
                     console.log('Trat');
-                    this.player_shotchance.splice(ft,1);
-                    // console.log(this.player_shotchance);
+                    console.log(this.player_shotchance);
                 } else if (ft === randomIndex & this.player_shotchance[ft] === 1) {
                     console.log('Trung');
                     this.rat_hit_point -= 2; 
-                    this.player_shotchance.splice(ft,1);
-                    // console.log(this.player_shotchance);
+                    console.log(this.player_shotchance)
                     if (this.rat_hit_point === 0) {
                         console.log("Rat is dead")
                     }
